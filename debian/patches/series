@@ -1,0 +1,3 @@
+black_version.patch
+disable_myst_parser.patch
+disable-furo-theme.diff
