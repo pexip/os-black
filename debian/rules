@@ -15,11 +15,11 @@ export PYBUILD_NAME=black
 	echo "version = '$(DEB_VERSION_UPSTREAM)'" > _black_version.py
 	mkdir -p src
 	cp _black_version.py src/
-	dh $@ --with sphinxdoc,python3 --buildsystem=pybuild
+	dh $@ --with python3 --buildsystem=pybuild
 
 override_dh_auto_build:
 	python3 setup.py build
-	PYTHONPATH="..:../src/" make -C docs/ html SPHINXBUILD="/usr/share/sphinx/scripts/python3/sphinx-build" SPHINXOPTS="-j 4 -D today=\"$(BUILD_DATE)\""
+	# PYTHONPATH="..:../src/" make -C docs/ html SPHINXBUILD="/usr/share/sphinx/scripts/python3/sphinx-build" SPHINXOPTS="-j 4 -D today=\"$(BUILD_DATE)\""
 	${RM} ./build/lib/blackd.py
 
 override_dh_auto_install:

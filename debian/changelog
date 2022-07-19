@@ -1,6 +1,7 @@
-black (22.3.0-1pexip1) pexip; urgency=medium
+black (22.3.0-1pexip1) pexip-bullseye; urgency=medium
 
   * Prepare Pexip packaging
+  * Remove python-black-doc package to avoid need for sphinx backport.
 
  -- Mark Hymers <mark.hymers@pexip.com>  Tue, 19 Jul 2022 18:20:02 +0100
 
