@@ -1,5 +1,4 @@
 :Version: 21.4b2-2
-:Date: 2021-10-10
 :Copyright: 2018 Łukasz Langa
 :Title: black-primer
 :Subtitle: CI tool to check a number of projects in parallel using black
