@@ -1,3 +1,60 @@
+black (23.1.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Fri, 10 Feb 2023 21:55:25 +0100
+
+black (22.12.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Sun, 18 Dec 2022 00:43:45 +0100
+
+black (22.10.0-2) unstable; urgency=medium
+
+  * Team upload
+  * d/control: Remove unused dependency on python3-typed-ast
+    This dependency is only required for Python < 3.8.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Thu, 13 Oct 2022 23:14:35 +0200
+
+black (22.10.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+
+  [ Timo Röhling ]
+  * New upstream version 22.10.0
+
+ -- Timo Röhling <roehling@debian.org>  Fri, 07 Oct 2022 21:32:44 +0200
+
+black (22.8.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 22.8.0
+
+ -- Timo Röhling <roehling@debian.org>  Mon, 05 Sep 2022 18:12:46 +0200
+
+black (22.6.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add bash completion.
+    Thanks to Hans-Christoph Steiner (Closes: #968043)
+  * Skip blackd tests
+
+ -- Timo Röhling <roehling@debian.org>  Sat, 06 Aug 2022 20:41:25 +0200
+
+black (22.6.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * Modernize and simplify packaging
+  * New upstream version 22.6.0
+  * Bump Standards-Version to 4.6.1
+
+ -- Timo Röhling <roehling@debian.org>  Sat, 30 Jul 2022 23:05:32 +0200
+
 black (22.3.0-1) unstable; urgency=medium
 
   * New upstream release

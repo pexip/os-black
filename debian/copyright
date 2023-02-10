@@ -3,7 +3,7 @@ Upstream-Name: black
 Source: https://github.com/psf/black
 
 Files: *
-Copyright: 2018 Łukasz Langa
+Copyright: 2018-2022, Łukasz Langa
     Anthony Sottile <asottile@umich.edu>
     Carol Willing <carolcode@willingconsulting.com>
     Carl Meyer <carl@oddbird.net>
@@ -30,7 +30,7 @@ Copyright: 2018 Łukasz Langa
 License: Expat
 
 Files: debian/*
-Copyright: 2018, 2021 Neil Williams <codehelp@debian.org>
+Copyright: 2018-2021, Neil Williams <codehelp@debian.org>
 License: Expat
 
 License: Expat

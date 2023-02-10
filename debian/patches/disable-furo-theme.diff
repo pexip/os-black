@@ -1,8 +1,17 @@
-Index: black2/docs/conf.py
+From: Debian Python Team <team+python@tracker.debian.org>
+Date: Sat, 30 Jul 2022 22:19:43 +0200
+Subject: disable-furo-theme
+
 ===================================================================
---- black2.orig/docs/conf.py
-+++ black2/docs/conf.py
-@@ -117,7 +117,7 @@ pygments_style = "sphinx"
+---
+ docs/conf.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/docs/conf.py b/docs/conf.py
+index 61ea71a..d775cd8 100644
+--- a/docs/conf.py
++++ b/docs/conf.py
+@@ -121,7 +121,7 @@ pygments_style = "sphinx"
  # The theme to use for HTML and HTML Help pages.  See the documentation for
  # a list of builtin themes.
  #

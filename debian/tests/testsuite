@@ -6,7 +6,7 @@ DEB_HOST_ARCH=$(dpkg-architecture -qDEB_HOST_ARCH)
 
 function runtest() {
   # use the installed black, just add the tests from source
-  PYTHONPATH=tests pytest-3 tests --run-optional no_jupyter
+  PYTHONPATH=tests pytest-3 tests --run-optional no_jupyter,no_blackd
 }
 
 python3 -c "import black"

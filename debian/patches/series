@@ -1,3 +1,4 @@
-black_version.patch
 disable_myst_parser.patch
 disable-furo-theme.diff
+no_fancy_pypi_readme.patch
+disable-test.diff
