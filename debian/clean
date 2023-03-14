@@ -1,0 +1,6 @@
+debian/black.1
+debian/black-primer.1
+docs/_build/
+docs/_static/pypi.svg
+src/_black_version.py
+src/black.egg-info/

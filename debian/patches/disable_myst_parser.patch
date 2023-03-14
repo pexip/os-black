@@ -1,12 +1,19 @@
+From: Debian Python Team <team+python@tracker.debian.org>
+Date: Sat, 30 Jul 2022 22:19:43 +0200
+Subject: disable_myst_parser
+
 Remove privacy-breach links and self-host docs
 
 Remove tracking URLs from the README and sidebar of pages
 in the documentation.
+---
+ docs/conf.py | 24 +++++++++++++-----------
+ 1 file changed, 13 insertions(+), 11 deletions(-)
 
-Index: black2/docs/conf.py
-===================================================================
---- black2.orig/docs/conf.py
-+++ black2/docs/conf.py
+diff --git a/docs/conf.py b/docs/conf.py
+index 7fc4f8f..61ea71a 100644
+--- a/docs/conf.py
++++ b/docs/conf.py
 @@ -19,6 +19,8 @@ from pathlib import Path
  
  from pkg_resources import get_distribution
@@ -16,7 +23,7 @@ Index: black2/docs/conf.py
  CURRENT_DIR = Path(__file__).parent
  
  
-@@ -43,7 +45,7 @@ author = "Łukasz Langa and contributors
+@@ -43,7 +45,7 @@ author = "Łukasz Langa and contributors to Black"
  
  # Autopopulate version
  # The version, including alpha/beta/rc tags, but not commit hash and datestamps
@@ -41,7 +48,7 @@ Index: black2/docs/conf.py
  
  # Add any paths that contain templates here, relative to this directory.
  templates_path = ["_templates"]
-@@ -100,15 +102,15 @@ pygments_style = "sphinx"
+@@ -100,19 +102,19 @@ pygments_style = "sphinx"
  
  # We need headers to be linkable to so ask MyST-Parser to autogenerate anchor IDs for
  # headers up to and including level 3.
@@ -51,45 +58,21 @@ Index: black2/docs/conf.py
  # Prettier support formatting some MyST syntax but not all, so let's disable the
  # unsupported yet still enabled by default ones.
 -myst_disable_syntax = [
+-    "colon_fence",
 -    "myst_block_break",
 -    "myst_line_comment",
 -    "math_block",
 -]
-+# myst_disable_syntax = [
++#myst_disable_syntax = [
++#    "colon_fence",
 +#    "myst_block_break",
 +#    "myst_line_comment",
 +#    "math_block",
 +#]
  
+ # Optional MyST Syntaxes
+-myst_enable_extensions = []
++#myst_enable_extensions = []
+ 
  # -- Options for HTML output -------------------------------------------------
- 
-Index: black2/docs/index.rst
-===================================================================
---- black2.orig/docs/index.rst
-+++ black2/docs/index.rst
-@@ -68,12 +68,7 @@ and `pipenv <https://docs.pipenv.org/>`_
- Show your style
- ---------------
- 
--Use the badge in your project's README.md:
--
--.. code-block:: md
--
--   [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
--
-+Use the badge in your project's README.md.
- 
- Using the badge in README.rst:
- 
-@@ -82,11 +77,6 @@ Using the badge in README.rst:
-    .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-       :target: https://github.com/psf/black
- 
--Looks like this:
--
--.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
--   :target: https://github.com/psf/black
--
- Contents
- --------
  

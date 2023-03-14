@@ -1,0 +1,51 @@
+_have black &&
+_black()
+{
+    local cur prev
+
+    COMPREPLY=()
+    cur=${COMP_WORDS[COMP_CWORD]}
+    prev=${COMP_WORDS[COMP_CWORD-1]}
+
+    case $prev in
+	-l|--line-length|--include|--exclude|--python-cell-magics|--required-version|--extend-exclude|--force-exclude|-W|--workers)
+	    return 0;;
+	-t|--target-version)
+	    COMPREPLY=( $(compgen -W "py33 py34 py35 py36 py37 py38 py39 py310 py311 py312" -- $cur) )
+	    return;;
+    esac
+    if [[ "$cur" == -* ]]; then
+	opts='-c -l -t -S -C -W -q -v -h'
+	lopts='
+	    --code
+	    --line-length
+	    --pypi
+	    --ipynb
+	    --python-cell-magics
+	    --skip-string-normalization
+	    --skip-magic-trailing-comma
+	    --preview
+	    --check
+	    --diff
+	    --color
+	    --no-color
+	    --fast
+	    --safe
+	    --required-version
+	    --include
+	    --exclude
+	    --extend-exclude
+	    --force-exclude
+	    --stdin-filename
+	    --workers
+	    --quiet
+	    --verbose
+	    --version
+	    --config
+	'
+	COMPREPLY=( $(compgen -W "${opts[*]} ${lopts[*]}" -- $cur) )
+    else
+	_filedir
+    fi
+}
+complete -F _black $filenames black
