@@ -7,7 +7,7 @@ export PYBUILD_DESTDIR=debian/black/
 	dh $@ --buildsystem=pybuild --with bash-completion
 
 execute_after_dh_auto_build:
-	make -C docs/ html PYTHONPATH="..:../src/" SPHINXBUILD="/usr/share/sphinx/scripts/python3/sphinx-build" SPHINXOPTS="-j 4 -D today=\"$(BUILD_DATE)\""
+	# make -C docs/ html PYTHONPATH="..:../src/" SPHINXBUILD="/usr/share/sphinx/scripts/python3/sphinx-build" SPHINXOPTS="-j 4 -D today=\"$(BUILD_DATE)\""
 
 execute_after_dh_auto_install:
 	rm debian/black/usr/bin/blackd

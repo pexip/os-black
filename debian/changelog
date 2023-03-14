@@ -1,6 +1,7 @@
 black (23.1.0-1pexip1) pexip; urgency=medium
 
   * New upstream release
+  * Don't build docs
 
  -- Huw Jones <huw@pexip.com>  Tue, 14 Mar 2023 15:58:28 +0000
 
