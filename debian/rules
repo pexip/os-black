@@ -13,7 +13,8 @@ execute_after_dh_auto_install:
 	rm debian/black/usr/bin/blackd
 
 execute_before_dh_installman:
-	rst2man debian/manpage.rst > debian/black.1
-	rst2man debian/manpage2.rst > debian/black-primer.1
+# 	rst2man debian/manpage.rst > debian/black.1
+# 	rst2man debian/manpage2.rst > debian/black-primer.1
+override_dh_installman:
 
 override_dh_auto_test:
