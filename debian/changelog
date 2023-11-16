@@ -1,3 +1,9 @@
+black (23.1.0-1pexip3) pexip-bookworm; urgency=medium
+
+  * Initial bookworm build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 16 Nov 2023 09:55:44 +0000
+
 black (23.1.0-1pexip2) pexip; urgency=medium
 
   * No-change rebuild
